@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 
+import React, { useState } from 'react';
 import Button from '../Button';
 
 import {
@@ -16,13 +17,24 @@ import {
 } from './AdvertItem.styled';
 
 const AdvertItem = ({ car }) => {
+  const [isLiked, setIsLiked] = useState(false);
+
+  const toggleLike = () => {
+    setIsLiked(!isLiked);
+  };
+
   return (
     <StyledAdvertItemCard>
       <StyledAdvertItemCardImageWrapper $img={car.img}>
-        <StyledAdvertItemLikeButton>
-          <StyledAdvertItemLikeIcon>
+        {/* <StyledAdvertItemLikeButton> */}
+        <StyledAdvertItemLikeButton
+          onClick={toggleLike}
+          className={isLiked ? 'liked' : ''}
+        >
+          {/* <StyledAdvertItemLikeIcon>
             <use xlinkHref="/icons.svg#icon-heart" />
-          </StyledAdvertItemLikeIcon>
+          </StyledAdvertItemLikeIcon> */}
+          <StyledAdvertItemLikeIcon className="heart-icon" />
         </StyledAdvertItemLikeButton>
       </StyledAdvertItemCardImageWrapper>
 
