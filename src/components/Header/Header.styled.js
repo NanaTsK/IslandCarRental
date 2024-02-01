@@ -39,6 +39,8 @@ export const StyledNav = styled.div`
 `;
 
 export const StyledLink = styled(NavLink)`
+  font-weight: 600;
+  font-size: 19px;
   padding: 12px 50px;
   /* display: inline-flex; */
   /* flex-wrap: nowrap; */
@@ -55,11 +57,11 @@ export const StyledLink = styled(NavLink)`
   border: 2px solid transparent;
   border-radius: 12px;
   box-sizing: border-box;
-  color: var(--button-color);
+  color: var(--main-blue-color);
   transition: transform var(--transition);
 
   &:hover {
-    color: var(--accent-color);
+    color: var(--hover-blue-color);
     transform: scale(1.1);
     border-color: var(--options-text-color);
   }
