@@ -63,7 +63,7 @@ export const StyledLink = styled(NavLink)`
   &:hover {
     color: var(--hover-blue-color);
     transform: scale(1.1);
-    border-color: var(--options-text-color);
+    /* border-color: var(--options-text-color); */
   }
   @media screen and (min-width: 768px) {
     /* margin: 0 10px; */
