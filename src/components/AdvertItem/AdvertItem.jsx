@@ -42,9 +42,3 @@ const AdvertItem = ({ car }) => {
 };
 
 export default AdvertItem;
-
-// const AdvertItem = () => {
-//   return <div>AdvertItem</div>;
-// };
-
-// export default AdvertItem;

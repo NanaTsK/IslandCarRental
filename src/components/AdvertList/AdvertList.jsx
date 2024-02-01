@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 
-import { selectCars } from '../../../../services/state/cars/carsSelectors';
+// import { selectCars } from '../../../../services/state/cars/carsSelectors';
+import { selectCars } from '../../redux/cars/carsSelectors';
 
 import AdvertItem from '../AdvertItem';
 import { StyledAdvertList } from './AdvertList.styled';
@@ -18,9 +19,3 @@ const AdvertList = () => {
 };
 
 export default AdvertList;
-
-// const AdvertList = () => {
-//   return <div>AdvertList</div>;
-// };
-
-// export default AdvertList;
