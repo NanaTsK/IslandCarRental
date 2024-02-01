@@ -1,10 +1,20 @@
 // import { Link } from 'react-router-dom';
-import { StyledHeader, StyledNav, StyledLink } from './Header.styled';
+import {
+  StyledHeader,
+  StyledNav,
+  StyledLink,
+  // StyledLogoIcon,
+} from './Header.styled';
 
 const Header = () => {
   return (
     <StyledHeader>
-      <div>IslandCarRental</div>
+      <div>
+        {/* <StyledLogoIcon>
+          <use xlinkHref="/car2.png" />
+        </StyledLogoIcon> */}
+        <p>IslandCarRental</p>
+      </div>
       <StyledNav>
         <StyledLink to="/">Home</StyledLink>
         <StyledLink to="/catalog">Catalog</StyledLink>

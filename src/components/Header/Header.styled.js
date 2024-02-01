@@ -72,3 +72,10 @@ export const StyledLink = styled(NavLink)`
     align-items: center; */
   }
 `;
+
+// export const StyledLogoIcon = styled.svg`
+//   height: 32px;
+//   width: 32px;
+//   fill: var(--main-blue-color);
+//   /* stroke: none; */
+// `;
