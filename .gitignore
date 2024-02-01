@@ -9,6 +9,10 @@
 /.pnp
 .pnp.js
 
+dist
+dist-ssr
+*.local
+
 # testing
 /coverage
 
