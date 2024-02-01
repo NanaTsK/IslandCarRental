@@ -4,7 +4,7 @@ export const StyledAdvertItemCard = styled.li``;
 
 export const StyledAdvertItemCardImageWrapper = styled.div`
   height: 268px;
-  border-radius: 24px;
+  border-radius: 14px;
 
   position: relative;
 
@@ -29,7 +29,7 @@ export const StyledAdvertItemLikeButton = styled.button`
   &:hover,
   &:focus {
     & > svg {
-      stroke: var(--accent-color);
+      stroke: var(--hover-blue-color);
     }
   }
 `;
@@ -38,7 +38,7 @@ export const StyledAdvertItemLikeIcon = styled.svg`
   width: 18px;
   height: 18px;
   fill: none;
-  stroke: rgba(255, 255, 255, 0.8);
+  stroke: var(--heart-color);
 
   transition: var(--transition);
 `;
@@ -52,11 +52,11 @@ export const StyledAdvertItemInfoContainer = styled.div`
 `;
 
 export const StyledAdvertItemTitle = styled.h3`
-  color: var(--secondary-text-color);
+  color: var(--main-text-color);
 
   font-size: 16px;
   font-weight: 500;
-  line-height: 150%;
+  line-height: 1.5;
 
   max-width: 20ch;
   overflow: hidden;
@@ -65,15 +65,15 @@ export const StyledAdvertItemTitle = styled.h3`
 `;
 
 export const StyledAdvertItemModel = styled.span`
-  color: var(--accent-color);
+  color: var(--main-blue-color);
 `;
 
 export const StyledAdvertItemPrice = styled.p`
-  color: var(--secondary-text-color);
+  color: var(--main-text-color);
 
   font-size: 16px;
   font-weight: 500;
-  line-height: 150%;
+  line-height: 1.5;
 `;
 
 export const StyledAdvertItemFeaturesList = styled.ul``;
