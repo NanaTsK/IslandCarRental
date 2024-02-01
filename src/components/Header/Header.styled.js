@@ -8,11 +8,20 @@ export const StyledHeader = styled.header`
   margin-top: 20px;
   margin-bottom: 20px;
   border-bottom: 2px solid var(--options-text-color);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const StyledLink = styled(NavLink)`
   padding: 12px 50px;
-  display: inline-block;
+  /* display: inline-block; */
+  /* display: inline-flex; 
+  align-items: center; 
+  justify-content: center;  */
+  /* display: flex;
+  flex-direction: row; */
   border: 2px solid transparent;
   box-sizing: border-box;
   color: var(--button-color);
