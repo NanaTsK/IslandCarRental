@@ -1,10 +1,13 @@
 /* eslint-disable react/prop-types */
 
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import Button from '../Button';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-
+// import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import { toggleFavorite } from '../../redux/cars/carsSlice';
+import { selectFavorites } from '../../redux/cars/carsSelectors';
 import {
+  StyledFavoriteBorderIcon,
   StyledAdvertItemCard,
   StyledAdvertItemCardImageWrapper,
   StyledAdvertItemLikeButton,
@@ -18,10 +21,17 @@ import {
 } from './AdvertItem.styled';
 
 const AdvertItem = ({ car }) => {
-  const [isLiked, setIsLiked] = useState(false);
+  // const [isLiked, setIsLiked] = useState(false);
 
-  const toggleLike = () => {
-    setIsLiked(!isLiked);
+  // const toggleLike = () => {
+  //   setIsLiked(!isLiked);
+  // };
+
+  const dispatch = useDispatch();
+  const favorites = useSelector(selectFavorites);
+  const isFavorite = favorites.filter(favorite => favorite.id === car.id)[0];
+  const onFavoriteToggle = car => {
+    dispatch(toggleFavorite(car));
   };
 
   return (
@@ -29,13 +39,15 @@ const AdvertItem = ({ car }) => {
       <StyledAdvertItemCardImageWrapper $img={car.img}>
         {/* <StyledAdvertItemLikeButton> */}
         <StyledAdvertItemLikeButton
-          onClick={toggleLike}
-          className={isLiked ? 'liked' : ''}
+          onClick={() => onFavoriteToggle(car)}
+          // className={isLiked ? 'liked' : ''}
         >
-          <FavoriteBorderIcon
+          {/* <StyledAdvertItemLikeIcon $isFavorite={isFavorite}></StyledAdvertItemLikeIcon> */}
+          {/* <FavoriteBorderIcon
             fontSize="medium"
             style={{ fill: 'var(--heart-color)' }}
-          />
+          /> */}
+          <StyledFavoriteBorderIcon $isFavorite={isFavorite} />
         </StyledAdvertItemLikeButton>
       </StyledAdvertItemCardImageWrapper>
 

@@ -1,4 +1,25 @@
+// import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 import styled from 'styled-components';
+
+export const StyledFavoriteBorderIcon = styled(FavoriteOutlinedIcon)`
+  /* width: 18px;
+  height: 18px; */
+  /* font-size: medium; */
+  /* color: var(--heart-color); */
+
+  fill: ${({ $isFavorite }) =>
+    $isFavorite ? 'var(--main-blue-color)' : 'none'};
+  color: ${({ $isFavorite }) =>
+    $isFavorite ? 'var(--main-blue-color)' : 'var(--heart-color)'};
+
+  transition: var(--transition);
+
+  /* Example: Scale on hover */
+  /* &:hover {
+    transform: scale(1.2);
+  } */
+`;
 
 export const StyledAdvertItemCard = styled.li``;
 
