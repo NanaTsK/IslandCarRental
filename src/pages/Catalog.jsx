@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-// import { useDispatch } from 'react-redux';
 
 import { getAllCars } from '../redux/cars/carsOperations';
 import { selectIsLoading } from '../redux/cars/carsSelectors';

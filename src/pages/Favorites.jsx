@@ -1,9 +1,3 @@
-// const Favorites = () => {
-//   return <div>Favorites</div>;
-// };
-
-// export default Favorites;
-
 import { useSelector } from 'react-redux';
 import { selectFavorites } from '../redux/cars/carsSelectors';
 
