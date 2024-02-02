@@ -5,4 +5,5 @@ export const StyledAdvertList = styled.ul`
   flex-wrap: wrap;
   justify-content: center;
   gap: 50px 29px;
+  margin-bottom: 100px;
 `;
