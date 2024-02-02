@@ -31,7 +31,7 @@ export const StyledLogo = styled(Link)`
 export const StyledLogoIcon = styled.svg`
   height: 32px;
   width: 32px;
-  fill: var(--main-text-color);
+  /* fill: var(--main-text-color); */
   stroke: var(--main-text-color);
 `;
 

@@ -25,54 +25,24 @@ export const StyledAdvertItemLikeButton = styled.button`
   top: 14px;
   right: 14px;
 
+  transition: var(--transition);
+  &:hover {
+    transform: scale(1.2);
+    stroke: var(--hover-blue-color);
+  }
+
   /* &:hover,
   &:focus {
     & > svg {
       stroke: var(--hover-blue-color);
     }
   } */
-  &:hover,
+  /* &:hover,
   &:focus {
-    .heart-icon {
+    .FavoriteBorderIcon {
       fill: var(--hover-blue-color);
     }
-  }
-`;
-
-// export const StyledAdvertItemLikeIcon = styled.svg`
-//   width: 18px;
-//   height: 18px;
-//   /* fill: none; */
-//   /* stroke: var(--heart-color); */
-//   /* stroke: rgba(255, 255, 255, 0.8);
-//   fill: none; */
-
-//   transition: var(--transition);
-// `;
-
-export const StyledAdvertItemLikeIcon = styled.div`
-  width: 18px;
-  height: 18px;
-  position: relative;
-
-  &:before,
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 8px;
-    width: 8px;
-    height: 14px;
-    border-radius: 8px 8px 0 0;
-    background-color: var(--heart-color); /* Set the heart color */
-    transform: rotate(-45deg);
-    transform-origin: center bottom;
-  }
-
-  &:after {
-    left: 0;
-    transform: rotate(45deg);
-  }
+  } */
 `;
 
 export const StyledAdvertItemInfoContainer = styled.div`

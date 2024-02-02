@@ -2,12 +2,13 @@
 
 import React, { useState } from 'react';
 import Button from '../Button';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 import {
   StyledAdvertItemCard,
   StyledAdvertItemCardImageWrapper,
   StyledAdvertItemLikeButton,
-  StyledAdvertItemLikeIcon,
+  // StyledAdvertItemLikeIcon,
   StyledAdvertItemInfoContainer,
   StyledAdvertItemTitle,
   StyledAdvertItemModel,
@@ -31,10 +32,10 @@ const AdvertItem = ({ car }) => {
           onClick={toggleLike}
           className={isLiked ? 'liked' : ''}
         >
-          {/* <StyledAdvertItemLikeIcon>
-            <use xlinkHref="/icons.svg#icon-heart" />
-          </StyledAdvertItemLikeIcon> */}
-          <StyledAdvertItemLikeIcon className="heart-icon" />
+          <FavoriteBorderIcon
+            fontSize="medium"
+            style={{ fill: 'var(--heart-color)' }}
+          />
         </StyledAdvertItemLikeButton>
       </StyledAdvertItemCardImageWrapper>
 

@@ -1,8 +1,9 @@
 // import { Link } from 'react-router-dom';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import {
   StyledHeader,
   StyledLogo,
-  StyledLogoIcon,
+  // StyledLogoIcon,
   StyledLogoTitle,
   StyledNav,
   StyledLink,
@@ -12,9 +13,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <StyledLogo to="/">
-        <StyledLogoIcon>
-          <use xlinkHref="public/icons.svg#icon-heart" />
-        </StyledLogoIcon>
+        <FavoriteBorderIcon sx={{ display: 'flex' }} />
         <StyledLogoTitle>IslandCarRental</StyledLogoTitle>
       </StyledLogo>
       <StyledNav>
