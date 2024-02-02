@@ -2,12 +2,17 @@ import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 
 export const StyledHeader = styled.header`
+  /* position: fixed;
+  z-index: 20; */
+  /* width: '100%'; */
+
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 2px solid var(--options-text-color);
   margin-bottom: 30px;
 
+  background-color: var(--accent-color-02);
   /* display: flex; */
   /* align-items: center; */
   /* justify-content: center; */
@@ -32,13 +37,13 @@ export const StyledLogoIcon = styled.svg`
   height: 32px;
   width: 32px;
   /* fill: var(--main-text-color); */
-  stroke: var(--main-text-color);
+  stroke: var(--accent-color);
 `;
 
 export const StyledLogoTitle = styled.p`
   font-weight: 600;
   font-size: 19px;
-  color: var(--main-text-color);
+  color: var(--accent-color);
 `;
 
 export const StyledNav = styled.div`

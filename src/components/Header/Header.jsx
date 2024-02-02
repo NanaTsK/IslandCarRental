@@ -1,5 +1,5 @@
 // import { Link } from 'react-router-dom';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import SpaOutlined from '@mui/icons-material/SpaOutlined';
 import {
   StyledHeader,
   StyledLogo,
@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <StyledLogo to="/">
-        <FavoriteBorderIcon sx={{ display: 'flex' }} />
+        <SpaOutlined sx={{ display: 'flex' }} />
         <StyledLogoTitle>IslandCarRental</StyledLogoTitle>
       </StyledLogo>
       <StyledNav>
