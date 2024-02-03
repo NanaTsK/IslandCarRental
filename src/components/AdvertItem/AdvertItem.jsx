@@ -13,6 +13,9 @@ import {
   StyledAdvertItemPrice,
   // StyledAdvertItemFeaturesList,
   // StyledAdvertItemFeature,
+  BottomTextStyle,
+  BottomTextListStyle,
+  BottomTextItemStyle,
 } from './AdvertItem.styled';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
@@ -24,6 +27,10 @@ const AdvertItem = ({ car }) => {
   const onFavoriteToggle = car => {
     dispatch(toggleFavorite(car));
   };
+
+  const addressParts = car.address.split(',');
+  const city = addressParts[1].trim();
+  const country = addressParts[2].trim();
 
   return (
     <StyledAdvertItemCard>
@@ -55,6 +62,36 @@ const AdvertItem = ({ car }) => {
         </StyledAdvertItemTitle>
         <StyledAdvertItemPrice>{car.rentalPrice}</StyledAdvertItemPrice>
       </StyledAdvertItemInfoContainer>
+
+      {/* <StyledAdvertItemFeaturesList>
+        <StyledAdvertItemFeature>
+          {extractLocation(car.address).city}
+        </StyledAdvertItemFeature>
+        <StyledAdvertItemFeature>
+          {extractLocation(car.address).country}
+        </StyledAdvertItemFeature>
+        <StyledAdvertItemFeature>{car.rentalCompany}</StyledAdvertItemFeature>
+        <StyledAdvertItemFeature>Premium</StyledAdvertItemFeature>
+        <StyledAdvertItemFeature>{car.type}</StyledAdvertItemFeature>
+        <StyledAdvertItemFeature>{car.model}</StyledAdvertItemFeature>
+        <StyledAdvertItemFeature>{car.id}</StyledAdvertItemFeature>
+        <StyledAdvertItemFeature>{car.accessories[0]}</StyledAdvertItemFeature>
+      </StyledAdvertItemFeaturesList> */}
+
+      <BottomTextStyle>
+        <BottomTextListStyle>
+          <BottomTextItemStyle>{city}</BottomTextItemStyle>
+          <BottomTextItemStyle>{country}</BottomTextItemStyle>
+          <BottomTextItemStyle>{car.rentalCompany}</BottomTextItemStyle>
+          {/* <BottomTextItemStyle>Premium</BottomTextItemStyle> */}
+        </BottomTextListStyle>
+        <BottomTextListStyle>
+          <BottomTextItemStyle>{car.type}</BottomTextItemStyle>
+          <BottomTextItemStyle>{car.make}</BottomTextItemStyle>
+          <BottomTextItemStyle>{car.id}</BottomTextItemStyle>
+          {/* <BottomTextItemStyle>{car.accessories[0]}</BottomTextItemStyle> */}
+        </BottomTextListStyle>
+      </BottomTextStyle>
 
       <Button padX={99} padY={12}>
         Learn More

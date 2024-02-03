@@ -68,3 +68,29 @@ export const StyledAdvertItemPrice = styled.p`
 export const StyledAdvertItemFeaturesList = styled.ul``;
 
 export const StyledAdvertItemFeature = styled.li``;
+
+//*======
+export const BottomTextStyle = styled('div')({
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '4px',
+  marginBottom: '28px',
+});
+
+export const BottomTextListStyle = styled('ul')({
+  display: 'flex',
+  flexWrap: 'wrap',
+  gap: '6px',
+  maxWidth: '100%',
+});
+
+export const BottomTextItemStyle = styled('li')({
+  color: 'var(--accessories-text-color)',
+  fontSize: '12px',
+  fontWeight: 400,
+  lineHeight: 1.5,
+  '&:not(:first-child)': {
+    paddingLeft: '6px',
+    borderLeft: '1px solid rgba(18, 20, 23, 0.10)',
+  },
+});
