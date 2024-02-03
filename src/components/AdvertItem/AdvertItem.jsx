@@ -45,8 +45,13 @@ const AdvertItem = ({ car }) => {
 
       <StyledAdvertItemInfoContainer>
         <StyledAdvertItemTitle>
-          {car.make} <StyledAdvertItemModel>{car.model}</StyledAdvertItemModel>,{' '}
-          {car.year}
+          {car.make}
+          {car.make.length < 10 && car.model ? (
+            <>
+              &nbsp;<StyledAdvertItemModel>{car.model}</StyledAdvertItemModel>
+            </>
+          ) : null}
+          , {car.year}
         </StyledAdvertItemTitle>
         <StyledAdvertItemPrice>{car.rentalPrice}</StyledAdvertItemPrice>
       </StyledAdvertItemInfoContainer>
