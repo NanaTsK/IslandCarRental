@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const StyledAdvertItemCard = styled.li``;
+export const StyledAdvertItemCard = styled.li`
+  width: 274px;
+`;
 
 export const StyledAdvertItemCardImageWrapper = styled.div`
   height: 268px;
@@ -32,7 +34,7 @@ export const StyledAdvertItemLikeButton = styled.button`
   }
 `;
 
-export const StyledAdvertItemInfoContainer = styled.div`
+export const StyledAdvertItemTitleContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -65,32 +67,27 @@ export const StyledAdvertItemPrice = styled.p`
   line-height: 1.5;
 `;
 
-export const StyledAdvertItemFeaturesList = styled.ul``;
+export const StyledAdvertItemInfoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 28px;
+`;
 
-export const StyledAdvertItemFeature = styled.li``;
+export const StyledAdvertItemInfoList = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: 100%;
+`;
 
-//*======
-export const BottomTextStyle = styled('div')({
-  display: 'flex',
-  flexDirection: 'column',
-  gap: '4px',
-  marginBottom: '28px',
-});
-
-export const BottomTextListStyle = styled('ul')({
-  display: 'flex',
-  flexWrap: 'wrap',
-  gap: '6px',
-  maxWidth: '100%',
-});
-
-export const BottomTextItemStyle = styled('li')({
-  color: 'var(--accessories-text-color)',
-  fontSize: '12px',
-  fontWeight: 400,
-  lineHeight: 1.5,
-  '&:not(:first-child)': {
-    paddingLeft: '6px',
-    borderLeft: '1px solid rgba(18, 20, 23, 0.10)',
-  },
-});
+export const StyledAdvertItemInfoItem = styled.li`
+  color: var(--accessories-text-color);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  &:not(:first-child) {
+    padding-left: 6px;
+    border-left: 1px solid rgba(18, 20, 23, 0.1);
+  }
+`;
