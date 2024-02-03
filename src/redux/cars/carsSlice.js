@@ -1,11 +1,14 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { getAllCars } from './carsOperations';
 
+const favoritesFromLocalStorage =
+  JSON.parse(localStorage.getItem('favorites')) || [];
+
 const initialState = {
   isLoading: false,
   error: null,
   cars: [],
-  favorites: [],
+  favorites: favoritesFromLocalStorage,
 };
 
 const carsSlice = createSlice({
@@ -24,6 +27,8 @@ const carsSlice = createSlice({
           favorite => favorite.id !== action.payload.id
         );
       }
+
+      localStorage.setItem('favorites', JSON.stringify(state.favorites));
     },
   },
   extraReducers: builder => {
