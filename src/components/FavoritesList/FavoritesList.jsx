@@ -2,19 +2,19 @@
 
 import AdvertItem from '../AdvertItem';
 
-import { StyledFavoritesList } from './FavoritesList.styled';
+import {
+  // StyledFavoriteListWrapper,
+  // StyledFavoriteListTitle,
+  StyledFavoritesList,
+} from './FavoritesList.styled';
 
 const FavoritesList = ({ favorites }) => {
   return (
-    <div>
-      <StyledFavoritesList>
-        {favorites.map(favorite => (
-          <li key={favorite.id}>
-            <AdvertItem car={favorite} />
-          </li>
-        ))}
-      </StyledFavoritesList>
-    </div>
+    <StyledFavoritesList>
+      {favorites.map(favorite => (
+        <AdvertItem key={favorite.id} car={favorite} />
+      ))}
+    </StyledFavoritesList>
   );
 };
 

@@ -1,6 +1,5 @@
 import { useSelector } from 'react-redux';
 
-// import { selectCars } from '../../../../services/state/cars/carsSelectors';
 import { selectCars } from '../../redux/cars/carsSelectors';
 
 import AdvertItem from '../AdvertItem';
