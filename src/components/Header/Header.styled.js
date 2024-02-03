@@ -13,18 +13,6 @@ export const StyledHeader = styled.header`
   margin-bottom: 30px;
 
   background-color: var(--accent-color-02);
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* flex-direction: column; */
-
-  @media screen and (min-width: 768px) {
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
-    /* justify-content: space-around;
-    align-items: center; */
-  }
 `;
 
 export const StyledLogo = styled(Link)`
@@ -36,8 +24,8 @@ export const StyledLogo = styled(Link)`
 export const StyledLogoIcon = styled.svg`
   height: 32px;
   width: 32px;
-  /* fill: var(--main-text-color); */
-  stroke: var(--accent-color);
+  fill: var(--main-text-color);
+  /* stroke: var(--accent-color); */
 `;
 
 export const StyledLogoTitle = styled.p`
@@ -52,51 +40,40 @@ export const StyledNav = styled.div`
   justify-content: center;
   flex-direction: column;
 
-  /* flex-wrap: nowrap; */
-
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    /* flex-wrap: wrap; */
     justify-content: center;
-    /* justify-content: space-around;
-    align-items: center; */
   }
 `;
 
 export const StyledLink = styled(NavLink)`
+  position: relative;
+
   font-weight: 600;
   font-size: 19px;
   padding: 2px 8px;
-  /* display: inline-flex; */
-  /* flex-wrap: nowrap; */
+  margin: 0 10px;
+  color: var(--main-blue-color);
 
   display: flex;
   align-items: center;
   justify-content: center;
-  /* display: flex; */
-  /* flex-direction: column; */
 
-  /* flex-direction: row; */
-  margin: 0 10px;
-
-  border: 2px solid transparent;
-  border-radius: 12px;
-  box-sizing: border-box;
-  color: var(--main-blue-color);
-  transition: transform var(--transition);
-
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--hover-blue-color);
     transform: scale(1.1);
-    /* border-color: var(--options-text-color); */
   }
+
+  &.active {
+    text-decoration: underline;
+    color: var(--hover-blue-color);
+    transform: scale(1.1);
+  }
+
   @media screen and (min-width: 768px) {
-    /* margin: 0 10px; */
     flex-direction: row;
     padding: 8px 8px;
-
-    /* justify-content: space-around;
-    align-items: center; */
   }
 `;
 
