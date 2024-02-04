@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-// import Button from '../Button';
-import Button from 'components/Button';
+import Button from '../Button';
 import AdvertInfoModalCard from 'components/AdvertInfoModalCard';
 import { toggleFavorite } from '../../redux/cars/carsSlice';
 import { selectFavorites } from '../../redux/cars/carsSelectors';
@@ -81,25 +80,6 @@ const AdvertItem = ({ car }) => {
           </StyledAdvertItemTitle>
           <StyledAdvertItemPrice>{car.rentalPrice}</StyledAdvertItemPrice>
         </StyledAdvertItemTitleContainer>
-
-        {/* <StyledAdvertItemInfoContainer>
-        <StyledAdvertItemInfoList>
-          <StyledAdvertItemInfoItem>{city}</StyledAdvertItemInfoItem>
-          <StyledAdvertItemInfoItem>{country}</StyledAdvertItemInfoItem>
-          <StyledAdvertItemInfoItem>
-            {car.rentalCompany}
-          </StyledAdvertItemInfoItem>
-          <StyledAdvertItemInfoItem>Premium</StyledAdvertItemInfoItem>
-        </StyledAdvertItemInfoList>
-        <StyledAdvertItemInfoList>
-          <StyledAdvertItemInfoItem>{car.type}</StyledAdvertItemInfoItem>
-          <StyledAdvertItemInfoItem>{car.make}</StyledAdvertItemInfoItem>
-          <StyledAdvertItemInfoItem>{car.id}</StyledAdvertItemInfoItem>
-          <StyledAdvertItemInfoItem>
-            {car.accessories[0]}
-          </StyledAdvertItemInfoItem>
-        </StyledAdvertItemInfoList>
-      </StyledAdvertItemInfoContainer> */}
 
         <StyledAdvertItemInfoContainer>
           {city && country && car.rentalCompany && (
