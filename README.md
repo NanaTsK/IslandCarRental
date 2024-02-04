@@ -1,12 +1,11 @@
 <img width="980" alt="IslandCarRental-readme_img" src="src/assets/IslandCarRental-cover.jpg">
 
-# IslandCarRental - React app :red_car:
+# IslandCarRental - React app :blue_car:
 
 Greetings and welcome to our Car Rental Application! Our platform simplifies the
 car rental process, enabling users to swiftly locate and hire a vehicle. We
 provide a seamless experience by offering customizable search options and a
 dedicated favorites page, ensuring convenience and ease throughout the process
-:red_car:
 
 It allows users to:
 
