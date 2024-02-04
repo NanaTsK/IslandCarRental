@@ -7,36 +7,25 @@ export const StyledHeader = styled('header')({
   left: '0',
   zIndex: '999',
   width: '100%',
-  background: '#f1f1f1',
-  boxShadow: '0 1px 8px 0 #121417',
-  borderRadius: '0 0 0 20px',
+  backgroundColor: 'var(--background-color)',
+  boxShadow: '0 1px 8px 0 rgba(18, 20, 23, 0.5)',
 });
 
 export const StyledHeaderContainer = styled.header`
-  /* position: fixed;
-  z-index: 20; */
-  /* width: '100%'; */
-
-  /* width: 100%; */
-  padding-top: 20px;
-  padding-bottom: 20px;
-  /* border-bottom: 2px solid var(--options-text-color); */
-  /* margin-bottom: 30px; */
-
-  /* background-color: var(--accent-color-02); */
+  padding-top: 10px;
+  padding-bottom: 10px;
 `;
 
 export const StyledLogo = styled(Link)`
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 4px;
+  margin-left: 20px;
 `;
 
-export const StyledLogoIcon = styled.svg`
-  height: 32px;
-  width: 32px;
-  fill: var(--main-text-color);
-  /* stroke: var(--accent-color); */
+export const StyledLogoIcon = styled.img`
+  height: 46px;
+  width: 46px;
 `;
 
 export const StyledLogoTitle = styled.p`

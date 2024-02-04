@@ -1,10 +1,9 @@
-// import { Link } from 'react-router-dom';
-import SpaOutlined from '@mui/icons-material/SpaOutlined';
+import ClassicCarLogo from '../../assets/classic-car.png';
 import {
   StyledHeader,
   StyledHeaderContainer,
   StyledLogo,
-  // StyledLogoIcon,
+  StyledLogoIcon,
   StyledLogoTitle,
   StyledNav,
   StyledLink,
@@ -15,7 +14,7 @@ const Header = () => {
     <StyledHeader>
       <StyledHeaderContainer>
         <StyledLogo to="/">
-          <SpaOutlined sx={{ display: 'flex' }} />
+          <StyledLogoIcon src={ClassicCarLogo} alt="Classic Car Logo" />{' '}
           <StyledLogoTitle>IslandCarRental</StyledLogoTitle>
         </StyledLogo>
         <StyledNav>
