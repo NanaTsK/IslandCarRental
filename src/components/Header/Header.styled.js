@@ -76,10 +76,3 @@ export const StyledLink = styled(NavLink)`
     padding: 8px 8px;
   }
 `;
-
-// export const StyledLogoIcon = styled.svg`
-//   height: 32px;
-//   width: 32px;
-//   fill: var(--main-blue-color);
-//   /* stroke: none; */
-// `;
