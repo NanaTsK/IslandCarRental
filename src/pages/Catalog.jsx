@@ -5,6 +5,7 @@ import { getAllCars } from '../redux/cars/carsOperations';
 import { selectIsLoading } from '../redux/cars/carsSelectors';
 
 import Loader from '../components/Loader';
+import AdvertFilterForm from '../components/AdvertFilterForm';
 import AdvertList from '../components/AdvertList';
 
 const CatalogPage = () => {
@@ -17,6 +18,7 @@ const CatalogPage = () => {
 
   return (
     <section>
+      <AdvertFilterForm />
       <AdvertList />
       {isLoading && <Loader />}
     </section>
