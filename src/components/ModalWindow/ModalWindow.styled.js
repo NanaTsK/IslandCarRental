@@ -10,6 +10,7 @@ export const StyledModalWindowOverlay = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 `;
 
 export const StyledModalWindow = styled.div`
@@ -20,6 +21,7 @@ export const StyledModalWindow = styled.div`
   border-radius: 24px;
   padding: 40px;
   background-color: var(--background-color);
+  z-index: 1001;
 `;
 
 export const StyledModalWindowCloseButton = styled.button`
