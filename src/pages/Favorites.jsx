@@ -21,7 +21,7 @@ const FavoritesPage = () => {
       {favorites.length === 0 ? (
         <EmptyPageTemplate
           // titleName="Island Car Rental"
-          titleText="Your Favorites List Is Stil Empty.
+          titleText="Your Favorites List Is Still Empty.
           Choose Your Car From The Catalog!"
         >
           <Button padY={14} padX={80} onClick={onHandleClick}>
