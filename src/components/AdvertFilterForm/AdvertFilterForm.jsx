@@ -74,13 +74,13 @@ const AdvertFilterForm = () => {
         <StyledAvdretFormCustomSelect>
           <StyledAvdretFormSelect
             name="price"
-            placeholder="To $"
+            placeholder="To €"
             id="car_price"
             defaultValue=""
             $width={125}
           >
             <option value="" disabled>
-              To $
+              To €
             </option>
             {prices.map(price => (
               <option key={price}>{price}</option>

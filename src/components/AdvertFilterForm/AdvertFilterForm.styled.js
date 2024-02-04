@@ -2,6 +2,7 @@ import styled from 'styled-components';
 // import { StyledInput } from "@/components/ui/Input/Input.styled";
 
 const StyledInput = styled.input`
+  font-family: var(--font-family);
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 18px;
@@ -41,6 +42,7 @@ export const StyledAdvertFormLabel = styled.label`
   font-weight: 500;
   font-size: 14px;
   line-height: 129%;
+  color: var(--filter-color);
 `;
 
 export const StyledAvdretFormCustomSelect = styled.div`
@@ -50,7 +52,8 @@ export const StyledAvdretFormCustomSelect = styled.div`
 `;
 
 export const StyledAvdretFormSelect = styled.select`
-  color: var(--secondary-text-color);
+  font-family: var(--font-family);
+  color: var(--main-text-color);
   height: 48px;
   width: ${({ $width }) => `${$width}px`};
   border-radius: 14px;
