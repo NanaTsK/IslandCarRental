@@ -25,6 +25,7 @@ const StyledInput = styled.input`
 `;
 
 export const StyledAdvertForm = styled.form`
+  margin-top: 140px;
   display: flex;
   justify-content: center;
   align-items: flex-end;

@@ -21,7 +21,7 @@ export const StyledHeaderContainer = styled.header`
   padding-top: 20px;
   padding-bottom: 20px;
   /* border-bottom: 2px solid var(--options-text-color); */
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 
   /* background-color: var(--accent-color-02); */
 `;
