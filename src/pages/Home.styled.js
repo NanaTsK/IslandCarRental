@@ -18,20 +18,29 @@ export const StyledHomeContainer = styled.div`
   margin-bottom: 40px;
 `;
 
-export const StyledHomePageTitle = styled.h1`
+export const StyledHomePageTitle = styled.span`
   font-weight: 600;
-  font-size: 34px;
+  font-size: 24px;
   color: var(--secondary-text-color);
   text-align: center;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     font-size: 28px;
   }
 `;
 
-export const StyledHomePageTitleName = styled.span`
+export const StyledHomePageTitleName = styled.h1`
+  font-weight: 600;
+  font-size: 34px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+
   color: var(--accent-color);
+
+  @media (min-width: 768px) {
+    font-size: 38px;
+  }
 `;
 
 export const ButtonContainer = styled.div`

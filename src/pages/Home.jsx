@@ -19,10 +19,16 @@ const HomePage = () => {
 
   return (
     <StyledHomeContainer>
-      <StyledHomePageTitle>
+      {/* <StyledHomePageTitle>
         <StyledHomePageTitleName>Island Car Rental</StyledHomePageTitleName> -
         Your Way To Explore Malta With Joy !
+      </StyledHomePageTitle> */}
+      <StyledHomePageTitleName>Island Car Rental</StyledHomePageTitleName>
+
+      <StyledHomePageTitle>
+        Your Way To Explore Malta With Joy !
       </StyledHomePageTitle>
+
       <StyledMainImage src={MainImage} alt="Classic Car" />
       <ButtonContainer>
         <Button padY={14} padX={80} onClick={onHandleClick}>
