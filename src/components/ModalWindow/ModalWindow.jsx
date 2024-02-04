@@ -5,7 +5,6 @@ import {
   StyledModalWindowOverlay,
   StyledModalWindow,
   StyledModalWindowCloseButton,
-  // StyledModalWindowCloseIcon,
   StyledModalWindowContainer,
 } from './ModalWindow.styled';
 
@@ -34,14 +33,11 @@ const ModalWindow = ({ onClose, children }) => {
     <StyledModalWindowOverlay onClick={onClose}>
       <StyledModalWindow onClick={e => e.stopPropagation()}>
         <StyledModalWindowCloseButton onClick={onModalClose}>
-          {/* <CloseOutlinedIcon sx={{ display: 'flex' }} /> */}
           <CloseOutlinedIcon
             fontSize="small"
             style={{ fill: 'var(--main-text-color)' }}
           />
         </StyledModalWindowCloseButton>
-        {/* <ModalClose onClick={handleClose} /> */}
-
         <StyledModalWindowContainer>{children}</StyledModalWindowContainer>
       </StyledModalWindow>
     </StyledModalWindowOverlay>,

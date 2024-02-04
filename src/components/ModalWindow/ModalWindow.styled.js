@@ -41,12 +41,4 @@ export const StyledModalWindowCloseButton = styled.button`
   }
 `;
 
-// export const StyledModalWindowCloseIcon = styled.svg`
-//   stroke: var(--main-text-color);
-//   width: 24px;
-//   height: 24px;
-
-//   transition: var(--transition);
-// `;
-
 export const StyledModalWindowContainer = styled.div``;
