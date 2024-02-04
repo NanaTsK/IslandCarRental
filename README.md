@@ -3,9 +3,10 @@
 # IslandCarRental - React app :blue_car:
 
 Greetings and welcome to our Car Rental Application! Our platform simplifies the
-car rental process, enabling users to swiftly locate and hire a vehicle. We
-provide a seamless experience by offering customizable search options and a
-dedicated favorites page, ensuring convenience and ease throughout the process
+car rental process, enabling users to swiftly locate and hire a vehicle. With
+intuitive interface compatible with any device, we provide a seamless experience
+by offering customizable search options and a dedicated favorites page, ensuring
+convenience and ease throughout the process.
 
 It allows users to:
 
@@ -13,6 +14,7 @@ It allows users to:
 - [x] add cars to their favorites
 - [x] view detailed information about each car
 - [x] filter cars catalogue
+- [x] contact the rental company via phone
 
 ## References
 
