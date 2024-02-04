@@ -34,17 +34,6 @@ export const StyledHomePageTitleName = styled.span`
   color: var(--accent-color);
 `;
 
-export const StyledHomePageInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 64px;
-`;
-
-export const StyledHomePageInfoSection = styled.div`
-  display: flex;
-  gap: 16px;
-`;
-
 export const ButtonContainer = styled.div`
   text-align: center;
 `;

@@ -1,9 +1,3 @@
-// const Home = () => {
-//   return <div>Home</div>;
-// };
-
-// export default Home;
-//* =====
 import { useNavigate } from 'react-router-dom';
 import Button from 'components/Button';
 import MainImage from '../assets/classic-car.png';
@@ -14,8 +8,6 @@ import {
   StyledHomePageTitle,
   StyledHomePageTitleName,
   ButtonContainer,
-  // StyledHomePageInfo,
-  // StyledHomePageInfoSection,
 } from './Home.styled';
 
 const HomePage = () => {
