@@ -1,9 +1,13 @@
 import styled from 'styled-components';
 
 export const StyledMainImage = styled.img`
-  width: 80%; /* Covering 80% of the width */
+  width: 60%;
   display: block;
-  margin: 0 auto; /* Center the image */
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 40%;
+  }
 `;
 
 export const StyledHomeContainer = styled.div`
@@ -20,6 +24,10 @@ export const StyledHomePageTitle = styled.h1`
   color: var(--secondary-text-color);
   text-align: center;
   margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
 `;
 
 export const StyledHomePageTitleName = styled.span`
@@ -38,5 +46,5 @@ export const StyledHomePageInfoSection = styled.div`
 `;
 
 export const ButtonContainer = styled.div`
-  text-align: center; /* Center the button */
+  text-align: center;
 `;
