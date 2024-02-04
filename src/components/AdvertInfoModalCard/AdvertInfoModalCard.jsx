@@ -1,7 +1,4 @@
 /* eslint-disable react/prop-types */
-
-// import { extractLocation, parseConditions, formatMileage } from '@/utils';
-
 import Button from '../Button';
 import ModalWindow from '../ModalWindow';
 
@@ -72,12 +69,7 @@ const AdvertInfoModalCard = ({ car, onClose }) => {
   const { minimumAge, validLicense, insurance } = parseConditions(
     car.rentalConditions
   );
-  // const { minimumAge, conditions } = parseConditions(car.rentalConditions);
   const mileage = formatMileage(car.mileage);
-
-  // const [, city, country] = address.split(',');
-  // const [minAge, validLicense, insurance] = rentalConditions.split('\n');
-  // const age = parseInt(minAge.match(/\d+/));
 
   return (
     <ModalWindow onClose={onClose}>
