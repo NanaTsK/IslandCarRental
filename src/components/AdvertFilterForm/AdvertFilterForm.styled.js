@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import { StyledInput } from "@/components/ui/Input/Input.styled";
 
 const StyledInput = styled.input`
   font-family: var(--font-family);
@@ -25,11 +24,16 @@ const StyledInput = styled.input`
 `;
 
 export const StyledAdvertForm = styled.form`
-  margin-top: 140px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   gap: 18px;
+
+  @media screen and (min-width: 920px) {
+    flex-direction: row;
+    align-items: flex-end;
+  }
 `;
 
 export const StyledAdvertFormItemWrapper = styled.div`
