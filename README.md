@@ -1,4 +1,4 @@
-<img width="980" alt="readme" src="assets/IslandCarRental-cover.jpg">
+<img width="980" alt="IslandCarRental-readme_img" src="src/assets/IslandCarRental-cover.jpg">
 
 # IslandCarRental - React app
 
@@ -17,7 +17,7 @@ It allows users to:
 
 ## References
 
-Live page: [**IslandCarRental**](https://github.com/NanaTsK/car-rental-app)
+Live page: [**IslandCarRental**](https://nanatsk.github.io/car-rental-app/)
 
 ## Technologies used:
 
