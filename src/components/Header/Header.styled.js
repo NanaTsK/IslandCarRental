@@ -1,18 +1,29 @@
 import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 
-export const StyledHeader = styled.header`
+export const StyledHeader = styled('header')({
+  position: 'fixed',
+  top: '0',
+  left: '0',
+  zIndex: '999',
+  width: '100%',
+  background: '#f1f1f1',
+  boxShadow: '0 1px 8px 0 #121417',
+  borderRadius: '0 0 0 20px',
+});
+
+export const StyledHeaderContainer = styled.header`
   /* position: fixed;
   z-index: 20; */
   /* width: '100%'; */
 
-  width: 100%;
+  /* width: 100%; */
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 2px solid var(--options-text-color);
+  /* border-bottom: 2px solid var(--options-text-color); */
   margin-bottom: 30px;
 
-  background-color: var(--accent-color-02);
+  /* background-color: var(--accent-color-02); */
 `;
 
 export const StyledLogo = styled(Link)`
