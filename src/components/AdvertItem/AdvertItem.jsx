@@ -52,7 +52,7 @@ const AdvertItem = ({ car }) => {
   return (
     <>
       <StyledAdvertItemCard>
-        <StyledAdvertItemCardImageWrapper $img={car.img}>
+        <StyledAdvertItemCardImageWrapper $img={car.img} alt={car.model}>
           <StyledAdvertItemLikeButton onClick={() => onFavoriteToggle(car)}>
             {isFavorite ? (
               <FavoriteOutlinedIcon
