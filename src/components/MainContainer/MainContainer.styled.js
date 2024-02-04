@@ -5,6 +5,7 @@ export const Container = styled.div`
   max-width: 375px;
   margin: 0 auto;
   padding: 0 20px;
+  margin-top: 190px;
 
   /* @media screen and (min-width: 768px) {
     max-width: 768px;
@@ -13,6 +14,7 @@ export const Container = styled.div`
 
   @media screen and (min-width: 768px) {
     max-width: 1440px;
-    padding: 0 96px;
+    padding: 100 96px;
+    margin-top: 130px;
   }
 `;

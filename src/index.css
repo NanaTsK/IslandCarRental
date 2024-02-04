@@ -4,10 +4,8 @@
   --main-text-color: #121417;
   --secondary-text-color: rgba(18, 20, 23, 0.5);
   --heart-color: rgba(255, 255, 255, 0.8);
-  /* --main-blue-color: rgba(52, 112, 255, 1); */
   --main-blue-color: #3470ff;
   --hover-blue-color: #0b44cd;
-  /* --accent-color: rgba(11, 68, 205, 1); */
   --background-color: #ffffff;
   --input-color: #f7f7fb;
 
@@ -27,15 +25,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-/* Filter box:
-border: 1px solid rgba(18, 20, 23, 0.05);
-border-radius: 14px;
-width: 224px;
-height: 272px;
-
-box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.02);
-background: #fff; */
 
 body {
   font-family: var(--font-family);

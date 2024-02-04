@@ -1,12 +1,7 @@
 /* eslint-disable react/prop-types */
-
 import AdvertItem from '../AdvertItem';
 
-import {
-  // StyledFavoriteListWrapper,
-  // StyledFavoriteListTitle,
-  StyledFavoritesList,
-} from './FavoritesList.styled';
+import { StyledFavoritesList } from './FavoritesList.styled';
 
 const FavoritesList = ({ favorites }) => {
   return (
