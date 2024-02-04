@@ -38,18 +38,25 @@ function extractLocation(address) {
 function parseConditions(value) {
   const array = value.split('\n');
   let minimumAge = null;
-  const conditions = [];
+  let validLicense = null;
+  let insurance = null;
+
   for (const el of array) {
     if (el.includes('Minimum age:')) {
       const ageMatch = el.match(/\d+/);
       minimumAge = ageMatch ? parseInt(ageMatch[0]) : null;
     } else {
-      conditions.push(el.trim());
+      if (!validLicense) {
+        validLicense = el.trim();
+      } else {
+        insurance = el.trim();
+      }
     }
   }
   return {
     minimumAge,
-    conditions,
+    validLicense,
+    insurance,
   };
 }
 
@@ -62,7 +69,10 @@ formatMileage(40000);
 
 const AdvertInfoModalCard = ({ car, onClose }) => {
   const { city, country } = extractLocation(car.address);
-  const { minimumAge, conditions } = parseConditions(car.rentalConditions);
+  const { minimumAge, validLicense, insurance } = parseConditions(
+    car.rentalConditions
+  );
+  // const { minimumAge, conditions } = parseConditions(car.rentalConditions);
   const mileage = formatMileage(car.mileage);
 
   // const [, city, country] = address.split(',');
@@ -84,25 +94,22 @@ const AdvertInfoModalCard = ({ car, onClose }) => {
 
             <StyledAdvertDetailsFeaturesList>
               <StyledAdvertDetailsFeature>{city}</StyledAdvertDetailsFeature>
-
               <StyledAdvertDetailsFeature>{country}</StyledAdvertDetailsFeature>
-
               <StyledAdvertDetailsFeature>
                 Id: {car.id}
               </StyledAdvertDetailsFeature>
-
               <StyledAdvertDetailsFeature>
                 Year: {car.year}
               </StyledAdvertDetailsFeature>
-
               <StyledAdvertDetailsFeature>
                 Type: {car.type}
               </StyledAdvertDetailsFeature>
+            </StyledAdvertDetailsFeaturesList>
 
+            <StyledAdvertDetailsFeaturesList>
               <StyledAdvertDetailsFeature>
                 Fuel Consumption: {car.fuelConsumption}
               </StyledAdvertDetailsFeature>
-
               <StyledAdvertDetailsFeature>
                 Engine Size: {car.engineSize}
               </StyledAdvertDetailsFeature>
@@ -143,11 +150,12 @@ const AdvertInfoModalCard = ({ car, onClose }) => {
                 </StyledAdvertDetailsRentalItemValue>
               </StyledAdvertDetailsRentalItem>
 
-              {conditions.map(condition => (
-                <StyledAdvertDetailsRentalItem key={condition}>
-                  {condition}
-                </StyledAdvertDetailsRentalItem>
-              ))}
+              <StyledAdvertDetailsRentalItem>
+                {validLicense}
+              </StyledAdvertDetailsRentalItem>
+              <StyledAdvertDetailsRentalItem>
+                {insurance}
+              </StyledAdvertDetailsRentalItem>
 
               <StyledAdvertDetailsRentalItem>
                 Mileage:{' '}
@@ -167,7 +175,7 @@ const AdvertInfoModalCard = ({ car, onClose }) => {
 
           <Button padY={12} padX={50}>
             <StyledAdvertDetailsTelephon href="tel:+380730000000">
-              Car rental
+              Rent This Car
             </StyledAdvertDetailsTelephon>
           </Button>
         </StyledAdvertDetailsBody>

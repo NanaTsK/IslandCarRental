@@ -54,10 +54,10 @@ export const StyledAdvertDetailsFeaturesList = styled.ul`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 2px;
+
   column-gap: 6px;
   row-gap: 4px;
-
-  margin-bottom: 14px;
 
   & > li {
     &:not(:last-child)::after {
@@ -78,13 +78,14 @@ export const StyledAdvertDetailsFeature = styled.li`
 
   font-size: 12px;
   line-height: 150%;
+  color: var(--secondary-text-color);
 `;
 
 export const StyledAdvertDetailsDescription = styled.p`
-  /* width: 461px; */
   color: var(--main-text-color);
   font-size: 14px;
   line-height: 143%;
+  margin-top: 14px;
 `;
 
 export const StyledAdvertDetailsFuncList = styled.ul`
@@ -113,6 +114,7 @@ export const StyledAdvertDetailsFunc = styled.li`
 
   font-size: 12px;
   line-height: 150%;
+  color: var(--secondary-text-color);
 `;
 
 export const StyledAdvertDetailsRentalList = styled.ul`
