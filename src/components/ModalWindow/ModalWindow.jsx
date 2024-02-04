@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import { createPortal } from 'react-dom';
-
+import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import {
   StyledModalWindowOverlay,
   StyledModalWindow,
   StyledModalWindowCloseButton,
-  StyledModalWindowCloseIcon,
+  // StyledModalWindowCloseIcon,
   StyledModalWindowContainer,
 } from './ModalWindow.styled';
 
@@ -34,10 +34,13 @@ const ModalWindow = ({ onClose, children }) => {
     <StyledModalWindowOverlay onClick={onClose}>
       <StyledModalWindow onClick={e => e.stopPropagation()}>
         <StyledModalWindowCloseButton onClick={onModalClose}>
-          <StyledModalWindowCloseIcon>
-            <use xlinkHref="/icons.svg#icon-close" />
-          </StyledModalWindowCloseIcon>
+          {/* <CloseOutlinedIcon sx={{ display: 'flex' }} /> */}
+          <CloseOutlinedIcon
+            fontSize="small"
+            style={{ fill: 'var(--main-text-color)' }}
+          />
         </StyledModalWindowCloseButton>
+        {/* <ModalClose onClick={handleClose} /> */}
 
         <StyledModalWindowContainer>{children}</StyledModalWindowContainer>
       </StyledModalWindow>
