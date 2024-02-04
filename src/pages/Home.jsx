@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import Button from 'components/Button';
-import MainImage from '../assets/classic-car.png';
+import MainImage from '../assets/classic-car-emblem.webp';
 
 import {
   StyledMainImage,
