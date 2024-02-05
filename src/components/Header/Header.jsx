@@ -1,4 +1,4 @@
-import ClassicCarLogo from '../../assets/classic-car.png';
+import ClassicCarLogo from '../../assets/classic-car.jpg';
 import {
   StyledHeader,
   StyledHeaderContainer,
