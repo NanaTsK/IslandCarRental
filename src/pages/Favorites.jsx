@@ -20,7 +20,6 @@ const FavoritesPage = () => {
     <div style={{ height: '100%' }}>
       {favorites.length === 0 ? (
         <EmptyPageTemplate
-          // titleName="Island Car Rental"
           titleText="Your Favorites List Is Still Empty.
           Choose Your Car From The Catalog!"
         >
